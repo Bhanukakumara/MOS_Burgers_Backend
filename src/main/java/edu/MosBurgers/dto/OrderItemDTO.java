@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderItemDTO {
-    private Long id;
     private Long orderId;
     private Long foodItemId;
     private int quantity;

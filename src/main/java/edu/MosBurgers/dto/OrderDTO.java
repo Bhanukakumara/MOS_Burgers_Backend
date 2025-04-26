@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderDTO {
-    private Long id;
     private String orderId;
     private Long customerId;
     private double totalAmount;

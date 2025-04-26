@@ -10,7 +10,6 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class FoodItemDTO {
-    private Long id;
     private String itemCode;
     private String name;
     private String category;
