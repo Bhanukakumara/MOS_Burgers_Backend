@@ -1,0 +1,20 @@
+package edu.MosBurgers.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class FoodItemDTO {
+    private Long id;
+    private String itemCode;
+    private String name;
+    private String category;
+    private double price;
+    private int quantity;
+    private LocalDate expirationDate;
+}
