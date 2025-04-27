@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -16,4 +17,6 @@ public class FoodItemDTO {
     private double price;
     private int quantity;
     private LocalDate expirationDate;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }

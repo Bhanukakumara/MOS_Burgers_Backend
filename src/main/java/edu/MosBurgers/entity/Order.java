@@ -25,10 +25,15 @@ public class Order {
     private BigDecimal totalAmount;
 
     @Column(precision = 5, scale = 2)
-    private BigDecimal discountPercentage = BigDecimal.ZERO;
+    private BigDecimal discountPercentage;
 
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal finalAmount;
 
     private LocalDateTime orderDate;
+
+    @PrePersist
+    protected void onCreate() {
+        orderDate = LocalDateTime.now();
+    }
 }
